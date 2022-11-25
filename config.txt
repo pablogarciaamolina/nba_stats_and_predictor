@@ -1,0 +1,4 @@
+key:Ocp-Apim-Subscription-Key
+value:cd3008c408b747beb821605028dd64a6
+team:Chicago Bulls
+teamID:CHI
