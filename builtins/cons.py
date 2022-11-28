@@ -1,3 +1,7 @@
+import os, sys
+
+if not os.path.exists('../results'):
+    os.mkdir('../results')
 PATH = 'results'
 
 YEAR = 2022
