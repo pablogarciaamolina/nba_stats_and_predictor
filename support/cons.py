@@ -15,3 +15,8 @@ PLAYER_COLS = [
     ]
 
 PREDICTIONS_WEB_PATH = 'https://www.sportytrader.es/pronosticos/baloncesto/usa/nba-306/'
+
+PREDICTION_KEYWORDS = [
+    'cuotas',
+    'apostar'
+]
