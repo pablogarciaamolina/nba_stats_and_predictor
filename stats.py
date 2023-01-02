@@ -1,9 +1,9 @@
 import requests
 import pandas as pd
 import json
-from support.quick_pdf import PDF
-from support.cons import RESULTS_PATH, YEAR, PLAYER_COLS
-from support.funcs import _set_config_
+from support.nba_team_report_pdf import PDF
+from support.cons import RESULTS_PATH, YEAR, PLAYER_COLS, TEAMS_ID
+from support.funcs import _set_config_, _pop_error_
 
 PATH = RESULTS_PATH
 
@@ -77,10 +77,24 @@ def load(df_list: list[pd.DataFrame], team: str, id: str, do_json: bool=False) -
     pdf.df_in_pdf(team_df, id, PATH)
     pdf.output(f'{PATH}/{id}_report.pdf')
 
+def main(header, name) -> None:
+    '''
+    Main function for obtaining the stats.
+    '''
+    try:
+        id = TEAMS_ID[name]
+    except Exception:
+        id = None
+        _pop_error_(f'no team named "{name}"')
+    
+    if id:
+        resp_list = extract(header, id)
+        df_list = transform(resp_list)
+        load(df_list, name.strip(), id.strip())
+
 
 if __name__ == '__main__':
 
     config = _set_config_()
-    resp_list = extract(config['header'], config['ID'].strip())
-    df_list = transform(resp_list)
-    load(df_list, config['team'].strip(), config['ID'].strip())
+    main(config['header'], config['team'])
+    
