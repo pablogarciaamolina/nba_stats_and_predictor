@@ -26,3 +26,38 @@ A .txt file containing the required credentials and the desired team.
 - team: (complete name of the team, see obtions avaliable on TEAMS)
 
 ** The value is the most important field. It is an individual private token required for having access to the data from https://www.api-basketball.com/. Thus, it is obtained creating an account. For more information visit: https://www.api-basketball.com/documentation
+
+The values in the file must be sepparated by ':' with no space in between. A templae is provided.
+
+## TEAMS
+
+-Atlanta Hawks
+-Brooklyn Nets
+-Boston Celtics
+-Charlotte Hornets
+-Chicago Bulls
+-Cleveland Cavaliers
+-Dallas Mavericks
+-Denver Nuggets
+-Detroit Pistons
+-Golden State Warriors
+-Houston Rockets
+-Indiana Pacers
+-Los Angeles Clippers
+-Los Angeles Lakers
+-Memphis Grizzlies
+-Miami Heat
+-Milwaukee Bucks
+-Minnesota Timberwolves
+-New Orleans Pelicans
+-New York Knicks
+-Oklahoma City Thunder
+-Orlando Magic
+-Philadelphia 76ers
+-Phoenix Suns
+-Portland Trail Blazers
+-San Antonio Spurs
+-Sacramento Kings
+-Toronto Raptors
+-Utah Jazz
+-Washington Wizards
