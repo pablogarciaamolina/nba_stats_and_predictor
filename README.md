@@ -21,8 +21,8 @@ Running this code will display a result on screen.
 ## config.txt
 
 A .txt file containing the required credentials and the desired team.
-\n-> key:Ocp-Apim-Subscription-Key
-\n-> value: *
-\n-> team: (complete name of the team, see obtions avaliable on #### TEAMS)
+- key:Ocp-Apim-Subscription-Key
+- value: *
+- team: (complete name of the team, see obtions avaliable on #### TEAMS)
 
-* The value is the most important field. It is an individual private token required for having access to the data from https://www.api-basketball.com/. Thus, it is obtained creating an account. For more information visit: https://www.api-basketball.com/documentation
+** The value is the most important field. It is an individual private token required for having access to the data from https://www.api-basketball.com/. Thus, it is obtained creating an account. For more information visit: https://www.api-basketball.com/documentation
